@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8282018159777512604}
   - component: {fileID: 8282018159777512605}
   - component: {fileID: 2888506597825040414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player1Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
