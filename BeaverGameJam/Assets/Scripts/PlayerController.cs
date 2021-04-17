@@ -16,19 +16,25 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private bool verticalInput;
     private bool grounded;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    private void FixedUpdate()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    }
+
+
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetKey(KeyCode.Space);
         rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
-        if (verticalInput)
+        if (verticalInput && grounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
         }
