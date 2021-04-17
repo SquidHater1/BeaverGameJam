@@ -6,6 +6,7 @@ public class KillPlayer2 : MonoBehaviour
 {
 
     public LevelManager levelManager;
+    public GameObject killParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class KillPlayer2 : MonoBehaviour
     {
         if (other.name == "Player2")
         {
+            Instantiate(killParticle, other.transform.position, other.transform.rotation);
             levelManager.RespawnPlayers();
         }
     }
