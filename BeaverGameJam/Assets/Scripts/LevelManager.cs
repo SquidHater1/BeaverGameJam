@@ -9,8 +9,12 @@ public class LevelManager : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
     public GameObject collectManager;
+    public GameObject player1Goal;
+    public GameObject player2Goal;
 
     private CollectiblePickup[] coinsList;
+    private LevelLoader p1LevelLoader;
+    private LevelLoader p2LevelLoader;
 
     
 
@@ -19,15 +23,16 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         coinsList = FindObjectsOfType<CollectiblePickup>();
-        //for(int i = 0; i < coinsList.Length; i++)
-        //{
-        //    coins.Add(coinsList[i].gameObject);
-        //}
+        p1LevelLoader = player1Goal.GetComponent<LevelLoader>();
+        p2LevelLoader = player2Goal.GetComponent<LevelLoader>();
     }
 
     void Update()
     {
-        
+        if(p1LevelLoader.playerInZone && p2LevelLoader.playerInZone && CollectManager.remaningCollectables == 0)
+        {
+            Debug.Log("Level Complete!");
+        }
     }
 
     public void RespawnPlayers()
