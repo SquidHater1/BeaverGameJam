@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     public GameObject player1Goal;
     public GameObject player2Goal;
     public string nextLevel;
+    public GameObject pauseMenu;
 
     private CollectiblePickup[] coinsList;
     private LevelLoader p1LevelLoader;
@@ -27,11 +28,13 @@ public class LevelManager : MonoBehaviour
         coinsList = FindObjectsOfType<CollectiblePickup>();
         p1LevelLoader = player1Goal.GetComponent<LevelLoader>();
         p2LevelLoader = player2Goal.GetComponent<LevelLoader>();
+        
     }
 
     void Update()
     {
-        if(p1LevelLoader.playerInZone && p2LevelLoader.playerInZone && CollectManager.remaningCollectables == 0 && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
+        if(p1LevelLoader.playerInZone && p2LevelLoader.playerInZone && CollectManager.remaningCollectables == 0 && 
+            (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && pauseMenu.GetComponent<PauseMenu>().isPaused == false)
         {
             Debug.Log("Level Complete!");
             SceneManager.LoadScene(nextLevel);

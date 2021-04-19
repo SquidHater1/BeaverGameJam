@@ -626,6 +626,7 @@ MonoBehaviour:
   player1Goal: {fileID: 843839449}
   player2Goal: {fileID: 1344471188}
   nextLevel: TitleScreen
+  pauseMenu: {fileID: 0}
   respawnDelay: 3
 --- !u!4 &361167751
 Transform:
@@ -4285,6 +4286,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7298506646654886329, guid: 942f98ecb72a1914a982d8428a473ad0, type: 3}
   m_PrefabInstance: {fileID: 2115289807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1753642793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 517.6313
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 169.29457
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -217.24734
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537724, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187881206173537725, guid: bf7002045757f704893b6bd693c04665, type: 3}
+      propertyPath: m_Name
+      value: Pause Menu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf7002045757f704893b6bd693c04665, type: 3}
 --- !u!1001 &1767558043
 PrefabInstance:
   m_ObjectHideFlags: 0
