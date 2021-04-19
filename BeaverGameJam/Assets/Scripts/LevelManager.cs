@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public GameObject player2Goal;
     public string nextLevel;
     public GameObject pauseMenu;
+    public string currentLevel;
 
     private CollectiblePickup[] coinsList;
     private LevelLoader p1LevelLoader;
@@ -33,6 +34,10 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(currentLevel);
+        }
         if(p1LevelLoader.playerInZone && p2LevelLoader.playerInZone && CollectManager.remaningCollectables == 0 && 
             (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && pauseMenu.GetComponent<PauseMenu>().isPaused == false)
         {
