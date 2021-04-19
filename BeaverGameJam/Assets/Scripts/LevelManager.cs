@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class LevelManager : MonoBehaviour
     public GameObject collectManager;
     public GameObject player1Goal;
     public GameObject player2Goal;
+    public string nextLevel;
 
     private CollectiblePickup[] coinsList;
     private LevelLoader p1LevelLoader;
@@ -32,6 +34,7 @@ public class LevelManager : MonoBehaviour
         if(p1LevelLoader.playerInZone && p2LevelLoader.playerInZone && CollectManager.remaningCollectables == 0)
         {
             Debug.Log("Level Complete!");
+            SceneManager.LoadScene(nextLevel);
         }
     }
 

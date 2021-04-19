@@ -445,6 +445,7 @@ MonoBehaviour:
   collectManager: {fileID: 384718664}
   player1Goal: {fileID: 843839449}
   player2Goal: {fileID: 1344471188}
+  nextLevel: Level1
   respawnDelay: 3
 --- !u!4 &361167751
 Transform:
@@ -2764,11 +2765,11 @@ Transform:
   - {fileID: 2030138282}
   - {fileID: 1847416638}
   - {fileID: 930510959}
+  - {fileID: 9312414}
   - {fileID: 1750155550}
   - {fileID: 1316646758}
-  - {fileID: 1181255677}
   - {fileID: 1396384794}
-  - {fileID: 9312414}
+  - {fileID: 1181255677}
   - {fileID: 688931879}
   - {fileID: 2127817954}
   - {fileID: 54431078}
