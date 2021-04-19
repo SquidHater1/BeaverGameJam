@@ -626,7 +626,7 @@ MonoBehaviour:
   player1Goal: {fileID: 843839449}
   player2Goal: {fileID: 1344471188}
   nextLevel: TitleScreen
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1087088352}
   respawnDelay: 3
 --- !u!4 &361167751
 Transform:
@@ -2359,6 +2359,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7298506646654886329, guid: 942f98ecb72a1914a982d8428a473ad0, type: 3}
   m_PrefabInstance: {fileID: 1018036358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1087088352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187881206173537725, guid: bf7002045757f704893b6bd693c04665, type: 3}
+  m_PrefabInstance: {fileID: 1753642793}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1105504646
 PrefabInstance:
