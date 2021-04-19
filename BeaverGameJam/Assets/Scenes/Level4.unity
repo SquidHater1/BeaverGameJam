@@ -4236,14 +4236,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'You and your Eclone can pass through spikes of the same color without
-    issue
+  m_Text: 'There are coins spread throughout the levels
 
-    However, spikes of the opposite color will kill you
-
-
-    Manuver
-    them past the spikes to the goals'
+    All the coins need to
+    be collected to use the exit platforms'
 --- !u!222 &1713137423
 CanvasRenderer:
   m_ObjectHideFlags: 0
