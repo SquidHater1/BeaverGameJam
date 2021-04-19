@@ -31,7 +31,7 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        if(p1LevelLoader.playerInZone && p2LevelLoader.playerInZone && CollectManager.remaningCollectables == 0)
+        if(p1LevelLoader.playerInZone && p2LevelLoader.playerInZone && CollectManager.remaningCollectables == 0 && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
         {
             Debug.Log("Level Complete!");
             SceneManager.LoadScene(nextLevel);
