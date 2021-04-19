@@ -1012,7 +1012,7 @@ MonoBehaviour:
   collectManager: {fileID: 384718664}
   player1Goal: {fileID: 843839449}
   player2Goal: {fileID: 1344471188}
-  nextLevel: Level8
+  nextLevel: Level9
   pauseMenu: {fileID: 1087088352}
   currentLevel: Level7
   respawnDelay: 3
